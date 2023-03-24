@@ -14,6 +14,8 @@ const mondayWork = function(activity = "go to the office") {
     return `This Monday, I will ${activity}.`;
 }
 
-function wrapAdjective() {
-    return 0;
+function wrapAdjective(flair = "*") {
+    return function innerFunction(quality = "special") {
+        return `You are ${flair}${quality}${flair}!`;
+    }
 }
