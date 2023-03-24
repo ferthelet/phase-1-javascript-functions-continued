@@ -1,0 +1,89 @@
+
+> javascript-lab@1.0.0 test
+> mocha --timeout 5000 -R mocha-multi --reporter-options spec=-,json=.results.json
+
+
+
+  index.js
+    defines saturdayFun function declaration as specified
+      1) function exists
+      2) uses the default activity 'roller-skate' when no arguments are passed
+      3) permits the default activity to be overriden
+    defines mondayWork function expression as specified
+      4) function exists
+      5) uses the default activity 'go to the office' when no arguments are passed
+      6) permits the default activity to be overriden
+    defines wrapAdjective function according to the specification
+      7) function exists
+      8) when initialized with '*' creates a function that, when called, wraps an adjective in a highlight
+      9) when initialized with '||' creates a function that, when called, wraps an adjective in a highlight
+
+
+  0 passing (261ms)
+  9 failing
+
+  1) index.js
+       defines saturdayFun function declaration as specified
+         function exists:
+     ReferenceError: saturdayFun is not defined
+      at Context.<anonymous> (test/indexTest.js:6:14)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  2) index.js
+       defines saturdayFun function declaration as specified
+         uses the default activity 'roller-skate' when no arguments are passed:
+     ReferenceError: saturdayFun is not defined
+      at Context.<anonymous> (test/indexTest.js:10:7)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  3) index.js
+       defines saturdayFun function declaration as specified
+         permits the default activity to be overriden:
+     ReferenceError: saturdayFun is not defined
+      at Context.<anonymous> (test/indexTest.js:14:7)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  4) index.js
+       defines mondayWork function expression as specified
+         function exists:
+     ReferenceError: mondayWork is not defined
+      at Context.<anonymous> (test/indexTest.js:20:14)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  5) index.js
+       defines mondayWork function expression as specified
+         uses the default activity 'go to the office' when no arguments are passed:
+     ReferenceError: mondayWork is not defined
+      at Context.<anonymous> (test/indexTest.js:24:7)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  6) index.js
+       defines mondayWork function expression as specified
+         permits the default activity to be overriden:
+     ReferenceError: mondayWork is not defined
+      at Context.<anonymous> (test/indexTest.js:28:7)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  7) index.js
+       defines wrapAdjective function according to the specification
+         function exists:
+     ReferenceError: wrapAdjective is not defined
+      at Context.<anonymous> (test/indexTest.js:34:14)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  8) index.js
+       defines wrapAdjective function according to the specification
+         when initialized with '*' creates a function that, when called, wraps an adjective in a highlight:
+     ReferenceError: wrapAdjective is not defined
+      at Context.<anonymous> (test/indexTest.js:38:20)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  9) index.js
+       defines wrapAdjective function according to the specification
+         when initialized with '||' creates a function that, when called, wraps an adjective in a highlight:
+     ReferenceError: wrapAdjective is not defined
+      at Context.<anonymous> (test/indexTest.js:44:20)
+      at process.processImmediate (node:internal/timers:476:21)
+
+
+
